@@ -17,31 +17,23 @@ To play in an already set up sandbox, in your browser, click the button below:
   <img src="https://raw.githubusercontent.com/play-with-docker/stacks/master/assets/images/button.png" alt="Try in PWD"/>
 </a>
 
-### Try on your Dev environment
+
+### To run on ARM64 architecture follow this instructions
+
 
 First clone the repo:
 
 ```sh
 git clone https://github.com/frappe/frappe_docker
+```
+
+```
 cd frappe_docker
 ```
 
-Then run: `docker compose -f pwd.yml up -d`
+Then run: ```docker compose -f pwd.yml up -d```
 
-### To run on ARM64 architecture follow this instructions
 
-After cloning the repo run this command to build multi-architecture images specifically for ARM64.
-
-`docker buildx bake --no-cache --set "*.platform=linux/arm64"`
-
-and then
-
-- add `platform: linux/arm64` to all services in the `pwd.yml`
-- replace the current specified versions of erpnext image on `pwd.yml` with `:latest`
-
-Then run: `docker compose -f pwd.yml up -d`
-
-## Final steps
 
 Wait for 5 minutes for ERPNext site to be created or check `create-site` container logs before opening browser on port 8080. (username: `Administrator`, password: `admin`)
 
