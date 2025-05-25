@@ -24,7 +24,7 @@ To play in an already set up sandbox, in your browser, click the button below:
 First clone the repo:
 
 ```sh
-https://github.com/DomySosof/frappe_docker.git
+git clone https://github.com/DomySosof/frappe_docker.git
 ```
 
 
