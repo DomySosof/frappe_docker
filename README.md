@@ -45,9 +45,8 @@ docker compose -f pwd.yml up -d
 
 
 
-# Wait for 5 minutes for ERPNext 
-
-site to be created or check `create-site` container logs before opening browser on port 8080.
+# Wait for 5 minutes for ERPNext site to be created
+or check `create-site` container logs before opening browser on port 8080.
 ```
 docker compose -f pwd.yml logs -f create-site
 ```
