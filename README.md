@@ -56,7 +56,10 @@ docker compose -f pwd.yml logs -f create-site
  ```
  Administrator
 ```
- Password: ```admin```
+ Password: 
+ ```
+ admin
+```
 
 
 
