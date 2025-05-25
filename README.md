@@ -27,10 +27,16 @@ First clone the repo:
 git clone https://github.com/DomySosof/frappe_docker.git
 ```
 
-
 ```
 cd frappe_docker
 ```
+o run on ARM64 architecture follow this instructions
+After cloning the repo run this command to build multi-architecture images specifically for ARM64.
+
+```
+docker buildx bake --no-cache --set "*.platform=linux/arm64"
+```
+
 
 Then run:  
 ```
